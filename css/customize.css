@@ -16,6 +16,7 @@ footer {
   position: fixed;
   bottom: 0px;
   margin-left: 10%;
+  margin-top: 20px;
   width: 80%;
   background-color: #FFFFFF;
 }
@@ -109,7 +110,6 @@ ul li{
   width: 80%;
   margin: 0 auto;
   background: #FFFFFF;
-  height: 600px;
 }
 
 .container{
