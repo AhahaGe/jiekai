@@ -17,7 +17,7 @@ footer {
   bottom: 0px;
   margin-left: 10%;
   width: 80%;
-  background-color: #33FF33;
+  background-color: #FFFFFF;
 }
 
 .carousel-inner>.item>img {
@@ -102,13 +102,13 @@ ul li{
 .bodyClass {
   width: 80%;
   margin: 0 auto 30px;
-  background: #33FF33;
+  background: #FFFFFF;
 }
 
 .bodyClassPage {
   width: 80%;
   margin: 0 auto;
-  background: #33FF33;
+  background: #FFFFFF;
   height: 600px;
 }
 
