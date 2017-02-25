@@ -17,7 +17,7 @@ footer {
   bottom: 0px;
   margin-left: 10%;
   width: 80%;
-  background-color: #99FF00;
+  background-color: #33FF33;
 }
 
 .carousel-inner>.item>img {
@@ -101,8 +101,17 @@ ul li{
 
 .bodyClass {
   width: 80%;
-  margin: 0 auto 120px;
+  margin: 0 auto 30px;
+  background: #33FF33;
 }
+
+.bodyClassPage {
+  width: 80%;
+  margin: 0 auto;
+  background: #33FF33;
+  height: 600px;
+}
+
 .container{
   width: auto!important;
 }
@@ -115,7 +124,7 @@ ul li{
 .news{
   margin-top: 18px;
 }
-.news .headF{
+.news .headT{
   text-align: left;
 }
 .news a.more{
@@ -137,16 +146,19 @@ ul li{
   height: 110px;  
 }
 .head .headText{
+  font-size: 40px;
   float: left;
   vertical-align: middle;
-  padding: 40px;
+  padding: 20px;
 }
 .head img {
   float: right;
 }
 .map {
   vertical-align: middle;
-  width: 620px;
-  height: 200px;
-  padding: 80px;
+  width: 470px;
+  height: 350px;
+  padding-left: 180px;
+  padding-top: 80px;
+  text-align: left;
 }
