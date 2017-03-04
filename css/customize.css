@@ -22,13 +22,30 @@ footer {
   height: 354px;
 }
 
+.left .carousel-control{
+  height: 354px;
+}
+
+.nav .navbar {
+  min-height: 44px;
+}
+
+.navbar .container {
+  height: 44px;
+}
+
 .navbar-default {
   background-color: #175FA9;
   border-color: #175FA9;
   border-radius: 0;
+  min-height: 44px;
 }
 .navbar-default .navbar-brand {
   color: #ecf0f1;
+  padding-top: 10px;
+  padding-left: 35px;
+  font-size: 14px;
+  height: 44px;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -36,9 +53,18 @@ footer {
 }
 .navbar-default .navbar-text {
   color: #ecf0f1;
+  vertical-align: middle;
 }
+
+.navbar-default .navbar-nav > li {
+  margin: 5px;
+  vertical-align: middle;
+}
+
 .navbar-default .navbar-nav > li > a {
   color: #ecf0f1;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -138,6 +164,7 @@ ul li{
 }
 .nomargin{
   margin: 0 auto 1px;
+  height: 44px;
 }
 .head {
   height: 86px;  
