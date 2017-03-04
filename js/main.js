@@ -30,7 +30,7 @@ $(document).ready(function(){
   	});
 
 
-    //发送请求获取最新banner数据
+  //发送请求获取最新banner数据
   $.ajax({
     method: "GET",
     url: "http://120.77.80.111/company/banner/list",
@@ -45,5 +45,5 @@ $(document).ready(function(){
       $('#dongtai').html(dongtai);
       $('#anli').html(anli);
     });
-
+    
 })

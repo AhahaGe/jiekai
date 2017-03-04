@@ -162,3 +162,11 @@ ul li{
   padding-top: 80px;
   text-align: left;
 }
+
+.caseType {
+  width: 20%;
+}
+
+.caseContent {
+  width: 70%;
+}
