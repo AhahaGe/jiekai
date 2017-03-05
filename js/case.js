@@ -9,12 +9,12 @@ $(document).ready(function(){
     .done(function( res ) {
       var caseType = '';
       for (var i = 0;i<res.length;i++) {
-        caseType+='<li>'+res[i].name+'</li>';
+        caseType+='<li><button id="'+res[i].id+'">'+res[i].name+'</button></li>';
       }
       $('#caseType').html(caseType);
     });
 
-    $.ajax({
+  $.ajax({
     method: "GET",
     url: "http://120.77.80.111:80/company/case/list",
   })
@@ -25,5 +25,21 @@ $(document).ready(function(){
       }
       $('#case').html(caseList);
     });
+
+  $('#caseType').on('click','li',function(e){
+    $.ajax({
+      method: "GET",
+      url: "http://120.77.80.111:80/company/case/categoryId/"+e.target.id,
+      success: function(res) {
+        var caseListOfCategory = '';
+        for (var i = 0;i<res.length;i++) {
+          //{"id":7,"title":"title2","createtime":1488556800000,"updatetime":1488556800000,"category":"category3","categoryid":3,"content":"content2"}
+          caseListOfCategory+='<li><button id="'+res[i].id+'">'+res[i].title+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</button></li>';
+        }
+        $('#case').html(caseListOfCategory);
+      }
+    })
+
+  })
 
 })

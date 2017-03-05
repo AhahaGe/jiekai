@@ -191,8 +191,14 @@ ul li{
 
 .caseType {
   width: 20%;
+  float: left;
+}
+
+.caseType li {
+  list-style: none;
 }
 
 .caseContent {
   width: 70%;
+  float: left;
 }
