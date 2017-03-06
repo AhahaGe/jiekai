@@ -21,7 +21,7 @@ $(document).ready(function(){
     .done(function( res ) {
       var caseList = '';
       for (var i = 0;i<res.length;i++) {
-        caseList+='<li><button name="button">'+res[i].title+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</button></li>';
+        caseList+='<li><button id="'+res[i].id+'">'+res[i].title+'</button><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'<p></li>';
       }
       $('#case').html(caseList);
     });
@@ -37,9 +37,21 @@ $(document).ready(function(){
           caseListOfCategory+='<li><button id="'+res[i].id+'">'+res[i].title+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</button></li>';
         }
         $('#case').html(caseListOfCategory);
+        document.getElementById(e.target.id).style.color="#c0392b";
       }
     })
+  });
 
-  })
+  $('#case').on('click','li',function(e){
+    $.ajax({
+      method: "GET",
+      url: "http://120.77.80.111:80/company/case/"+e.target.id,
+      success: function(res) {
+          //{"id":7,"title":"title2","createtime":1488556800000,"updatetime":1488556800000,"category":"category3","categoryid":3,"content":"content2"}
+        var caseContent = '<form><button">'+res.title+new Date(parseInt(res.updatetime)).format("yyyy-MM-dd-mm-ss")+'</button><br><text>'+res.content+'</text></form>';
+        $('#case').html(caseContent);
+      }
+    })
+  });
 
 })
