@@ -8,12 +8,9 @@
 
 footer {
   text-align: center;
-  height: 80px;
-  position: fixed;
+  height: 60px;
   bottom: 0px;
-  margin-left: 17%;
-  margin-top: 40px;
-  width: 70%;
+  width: 100%;
   background-color: #FFFFFF;
 }
 
@@ -125,13 +122,13 @@ ul li{
 
 .bodyClass {
   width: 70%;
-  margin: 0 auto 100px;
+  margin: 0 auto 50px;
   background: #FFFFFF;
 }
 
 .bodyClassPage {
   width: 70%;
-  margin: 0 auto 100px;
+  margin: 0 auto 50px;
   background: #FFFFFF;
 }
 

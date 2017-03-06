@@ -9,7 +9,7 @@ $(document).ready(function(){
     .done(function( res ) {
       var caseType = '';
       for (var i = 0;i<res.length;i++) {
-        caseType+='<li><button id="'+res[i].id+'">'+res[i].name+'</button></li>';
+        caseType+='<li class="list-group-item" id="'+res[i].id+'">'+res[i].name+'</li>';
       }
       $('#caseType').html(caseType);
     });
@@ -21,7 +21,7 @@ $(document).ready(function(){
     .done(function( res ) {
       var caseList = '';
       for (var i = 0;i<res.length;i++) {
-        caseList+='<li><button id="'+res[i].id+'">'+res[i].title+'</button><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'<p></li>';
+        caseList+='<li class="list-group-item" id="'+res[i].id+'">'+res[i].title+'<p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'<p></li>';
       }
       $('#case').html(caseList);
     });
@@ -34,7 +34,7 @@ $(document).ready(function(){
         var caseListOfCategory = '';
         for (var i = 0;i<res.length;i++) {
           //{"id":7,"title":"title2","createtime":1488556800000,"updatetime":1488556800000,"category":"category3","categoryid":3,"content":"content2"}
-          caseListOfCategory+='<li><button id="'+res[i].id+'">'+res[i].title+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</button></li>';
+          caseListOfCategory+='<li class="list-group-item" id="'+res[i].id+'">'+res[i].title+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</li>';
         }
         $('#case').html(caseListOfCategory);
         document.getElementById(e.target.id).style.color="#c0392b";
