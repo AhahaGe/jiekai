@@ -21,7 +21,7 @@ $(document).ready(function(){
     .done(function( res ) {
       var caseList = '';
       for (var i = 0;i<res.length;i++) {
-        caseList+='<li class="list-group-item" id="'+res[i].id+'">'+res[i].title+'<p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'<p></li>';
+        caseList+='<li class="list-group-item right-li" id="'+res[i].id+'"><div class="caseTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</p></li>';
       }
       $('#case').html(caseList);
     });
@@ -34,17 +34,19 @@ $(document).ready(function(){
         var caseListOfCategory = '';
         for (var i = 0;i<res.length;i++) {
           //{"id":7,"title":"title2","createtime":1488556800000,"updatetime":1488556800000,"category":"category3","categoryid":3,"content":"content2"}
-          caseListOfCategory+='<li class="list-group-item" id="'+res[i].id+'">'+res[i].title+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</li>';
+          caseListOfCategory+='<li class="list-group-item" id="'+res[i].id+'"><div class="caseTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</p></li>';
         }
         $('#case').html(caseListOfCategory);
       }
     })
+    $(this).addClass("active").siblings('li').removeClass('active');
   });
 
   $('#case').on('click','li',function(e){
+    var id = $(this).attr('id');
     $.ajax({
       method: "GET",
-      url: "http://120.77.80.111:80/company/case/"+e.target.id,
+      url: "http://120.77.80.111:80/company/case/"+id,
       success: function(res) {
           //{"id":7,"title":"title2","createtime":1488556800000,"updatetime":1488556800000,"category":"category3","categoryid":3,"content":"content2"}
         var caseContent = '<form><button">'+res.title+new Date(parseInt(res.updatetime)).format("yyyy-MM-dd-mm-ss")+'</button><br><text>'+res.content+'</text></form>';

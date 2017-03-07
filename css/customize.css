@@ -187,18 +187,50 @@ ul li{
 }
 
 .caseType {
-  width: 20%;
+  /*width: 20%;*/
   float: left;
+  padding: 0;
 }
-
+.caseType .title{
+  padding: 10px 0;
+  background: #175FA9;
+  color: #fff;
+}
 .caseType li {
   list-style: none;
 }
 
 .caseContent {
-  width: 70%;
+  width: 90%;
   float: left;
 }
+
 .li-hover:hover{
   cursor: pointer;
+  color: red;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+li .caseTitle {
+  float: left;
+  color: red;
+}
+
+li .caseTitle:hover {
+  cursor: pointer;
+  color: red;
+}
+
+li .datetime {
+  float: right;
+  margin: 0;
+}
+.list-group-item{
+  overflow: hidden;
+}
+.right-li{
+  padding: 12px 15px;
 }
