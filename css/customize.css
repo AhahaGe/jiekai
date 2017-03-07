@@ -199,3 +199,6 @@ ul li{
   width: 70%;
   float: left;
 }
+.li-hover:hover{
+  cursor: pointer;
+}

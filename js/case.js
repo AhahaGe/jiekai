@@ -9,7 +9,7 @@ $(document).ready(function(){
     .done(function( res ) {
       var caseType = '';
       for (var i = 0;i<res.length;i++) {
-        caseType+='<li class="list-group-item" id="'+res[i].id+'">'+res[i].name+'</li>';
+        caseType+='<li class="list-group-item li-hover" id="'+res[i].id+'">'+res[i].name+'</li>';
       }
       $('#caseType').html(caseType);
     });
@@ -37,7 +37,6 @@ $(document).ready(function(){
           caseListOfCategory+='<li class="list-group-item" id="'+res[i].id+'">'+res[i].title+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</li>';
         }
         $('#case').html(caseListOfCategory);
-        document.getElementById(e.target.id).style.color="#c0392b";
       }
     })
   });
