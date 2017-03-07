@@ -49,7 +49,7 @@ $(document).ready(function(){
       url: "http://120.77.80.111:80/company/case/"+id,
       success: function(res) {
           //{"id":7,"title":"title2","createtime":1488556800000,"updatetime":1488556800000,"category":"category3","categoryid":3,"content":"content2"}
-        var caseContent = '<form><button">'+res.title+new Date(parseInt(res.updatetime)).format("yyyy-MM-dd-mm-ss")+'</button><br><text>'+res.content+'</text></form>';
+        var caseContent = '<div class="panel panel-primary"><div class="panel-heading">'+res.title+'</div><div class="panel-body">'+res.content+'</div></div>';
         $('#case').html(caseContent);
       }
     })
