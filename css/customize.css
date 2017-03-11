@@ -17,6 +17,7 @@ footer {
 .carousel-inner>.item>img {
   margin: 0 auto;
   height: 354px;
+  width: 100%;
 }
 
 .left .carousel-control{
@@ -123,7 +124,7 @@ ul li{
 .bodyClass {
   width: 70%;
   margin: 0 auto 50px;
-  background: #FFFFFF;
+  /*background: #FFFFFF;*/
 }
 
 .bodyClassPage {
@@ -165,6 +166,7 @@ ul li{
 }
 .head {
   height: 110px;  
+  background: : url(../img/top_bg.jpg) 0 0 repeat-x;
 }
 .head .headText{
   font-size: 40px;
@@ -173,9 +175,9 @@ ul li{
   padding: 10px;
 }
 .head img {
-  float: right;
+  float: left;
   vertical-align: middle;
-  padding: 5px;
+  padding: 0px;
 }
 .map {
   vertical-align: middle;
