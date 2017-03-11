@@ -254,3 +254,7 @@ li .datetime {
   cursor: pointer;
   color: red;
 }
+.bannerImg {
+  max-width:896px;//这是DIV的大小
+  width:expression(this.width > 896 ? "896px" : this.width);//实现按比例缩放
+}
