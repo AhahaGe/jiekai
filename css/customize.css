@@ -37,6 +37,7 @@ footer {
   border-color: #175FA9;
   border-radius: 0;
   min-height: 44px;
+  margin-bottom: 1px;
 }
 .navbar-default .navbar-brand {
   color: #ecf0f1;
