@@ -201,11 +201,15 @@ ul li{
 }
 .caseType li {
   list-style: none;
+  width: 243px;/*具体数值自行修改，下一行相同*/
+  overflow: hidden;
 }
 
 .caseContent {
-  width: 90%;
-  float: left;
+  width: 642px;
+  float: right;
+  margin: 5px;
+  padding: 0px;
 }
 
 .li-hover:hover{
@@ -245,7 +249,7 @@ li .datetime {
   overflow: hidden;
 }
 .right-li{
-  padding: 12px 15px;
+  padding: 12px 5px;
 }
 .anliTitle {
   float: left;
