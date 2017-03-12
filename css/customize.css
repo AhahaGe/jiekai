@@ -8,10 +8,22 @@
 
 footer {
   text-align: center;
-  height: 60px;
+  height: 80px;
   bottom: 0px;
   width: 100%;
   background-color: #FFFFFF;
+  font-size: 12px;
+  color: #bebebe;
+  margin-top: 20px;
+}
+
+footer hr {
+  width: 100%;
+  margin: 0px;
+}
+
+footer a {
+  color: #bebebe;
 }
 
 .carousel-inner>.item>img {
