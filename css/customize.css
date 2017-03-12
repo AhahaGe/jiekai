@@ -222,6 +222,32 @@ ul li{
   float: right;
   margin: 5px;
   padding: 0px;
+  font-size: 10px;
+}
+
+.caseContent .pTitle{
+  float: left;
+  margin-top: 12px;
+  font-size: 16px;
+  color: #175FA9;
+}
+
+.imgTitle {
+  float: left;
+  margin-left: 10px;
+}
+
+.pTitle img{
+  margin-bottom: 5px;
+}
+
+.caseContent li{
+  border: 1px;
+}
+
+.caseContent hr {
+  width: 100%;
+  margin: 0px;
 }
 
 .li-hover:hover{
@@ -235,7 +261,7 @@ ul li{
 
 li .caseTitle {
   float: left;
-  color: red;
+  font-size: 10px;
 }
 
 li .caseTitle:hover {
@@ -253,7 +279,6 @@ li .datetime {
 }
 .datetimeTitle {
   float: right;
-  color: red;
   font-size: 10px;
   margin-top: 20px;
 }
@@ -261,7 +286,7 @@ li .datetime {
   overflow: hidden;
 }
 .right-li{
-  padding: 12px 5px;
+  /*padding: 12px 5px;*/
 }
 .anliTitle {
   float: left;
@@ -271,6 +296,6 @@ li .datetime {
   color: red;
 }
 .bannerImg {
-  max-width:896px;//这是DIV的大小
-  width:expression(this.width > 896 ? "896px" : this.width);//实现按比例缩放
+  max-width:1300px;//这是DIV的大小
+  width:expression(this.width > 896 ? this.width : "896px");//实现按比例缩放
 }

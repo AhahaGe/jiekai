@@ -36,7 +36,7 @@ $(document).ready(function(){
           url: "http://120.77.80.111:80/company/case/"+Param.id,
           success: function(res) {
               //{"id":7,"title":"title2","createtime":1488556800000,"updatetime":1488556800000,"category":"category3","categoryid":3,"content":"content2"}
-            var caseContent = '<div class="panel panel-primary"><div class="panel-heading">'+res.title+'</div><div class="datetimeTitle">日期：'+new Date(parseInt(res.updatetime)).format("yyyy-MM-dd-mm-ss")+'</div><div class="panel-body">'+res.content+'</div></div>';
+            var caseContent = '<div class="panel panel-primary"><div class="panel-heading">'+res.title+'</div><div class="datetimeTitle">日期：'+new Date(parseInt(res.updatetime)).format("yyyy-MM-dd")+'</div><div class="panel-body">'+res.content+'</div></div>';
             $('#case').html(caseContent);
           }
         })      
@@ -49,7 +49,7 @@ $(document).ready(function(){
           .done(function( res ) {
             var caseList = '';
             for (var i = 0;i<res.length;i++) {
-              caseList+='<li class="list-group-item right-li" id="'+res[i].id+'"><div class="caseTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</p></li>';
+              caseList+='<li class="list-group-item right-li" id="'+res[i].id+'"><img class="imgTitle" src="../img/icon01.png"><div class="caseTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd")+'</p></li>';
             }
             $('#case').html(caseList);
           });
@@ -63,7 +63,7 @@ $(document).ready(function(){
         var caseListOfCategory = '';
         for (var i = 0;i<res.length;i++) {
           //{"id":7,"title":"title2","createtime":1488556800000,"updatetime":1488556800000,"category":"category3","categoryid":3,"content":"content2"}
-          caseListOfCategory+='<li class="list-group-item" id="'+res[i].id+'"><div class="caseTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</p></li>';
+          caseListOfCategory+='<li class="list-group-item" id="'+res[i].id+'"><img class="imgTitle" src="../img/icon01.png"><div class="caseTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd")+'</p></li>';
         }
         $('#case').html(caseListOfCategory);
       }
@@ -78,7 +78,7 @@ $(document).ready(function(){
       url: "http://120.77.80.111:80/company/case/"+id,
       success: function(res) {
           //{"id":7,"title":"title2","createtime":1488556800000,"updatetime":1488556800000,"category":"category3","categoryid":3,"content":"content2"}
-        var caseContent = '<div class="panel panel-primary"><div class="panel-heading">'+res.title+'</div><div class="datetimeTitle">日期：'+new Date(parseInt(res.updatetime)).format("yyyy-MM-dd-mm-ss")+'</div><div class="panel-body">'+res.content+'</div></div>';
+        var caseContent = '<div class="panel panel-primary"><div class="panel-heading">'+res.title+'</div><div class="datetimeTitle">日期：'+new Date(parseInt(res.updatetime)).format("yyyy-MM-dd")+'</div><div class="panel-body">'+res.content+'</div></div>';
         $('#case').html(caseContent);
       }
     })
