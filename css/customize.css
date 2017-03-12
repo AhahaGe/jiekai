@@ -218,8 +218,8 @@ ul li{
 }
 
 .caseContent {
-  width: 642px;
-  float: right;
+  width: 100%;
+  float: left;
   margin: 5px;
   padding: 0px;
   font-size: 10px;
@@ -298,4 +298,7 @@ li .datetime {
 .bannerImg {
   max-width:1300px;//这是DIV的大小
   width:expression(this.width > 896 ? this.width : "896px");//实现按比例缩放
+}
+.bannerImgContent {
+  width: 100%;
 }
