@@ -150,7 +150,8 @@ ul li{
   width: auto!important;
 }
 #anli li{
-  /*width: 50%;*/
+  display: flex;
+  justify-content: space-between;
 }
 #anli li img{
   width: 100%;
@@ -200,11 +201,19 @@ ul li{
   padding-top: 80px;
   text-align: left;
 }
-
+.caseType-bd {
+  text-align: left;
+}
 .caseType {
-  /*width: 15%;*/
-  float: left;
+  width: 20%;
+  /*float: left;*/
+  display: inline-block;
   padding: 0;
+  /*display: flex;
+  justify-content: space-between;*/
+}
+#caseType {
+  padding-left: 0;
 }
 .caseType .title{
   padding: 10px 0;
@@ -213,14 +222,17 @@ ul li{
 }
 .caseType li {
   list-style: none;
-  width: 243px;/*具体数值自行修改，下一行相同*/
+  /*width: 243px;具体数值自行修改，下一行相同*/
   overflow: hidden;
 }
 
 .caseContent {
-  width: 642px;
-  float: left;
-  margin: 5px;
+  width: 79%;
+  display: inline-block;
+  vertical-align: top;
+ /* display: flex;
+  justify-content: space-between;*/
+  /*margin: 5px;*/
   padding: 0px;
   font-size: 10px;
 }
@@ -296,7 +308,7 @@ li .datetime {
   color: red;
 }
 .bannerImg {
-  max-width:1300px;//这是DIV的大小
+  max-width:2000px;//这是DIV的大小
   width:expression(this.width > 896 ? this.width : "896px");//实现按比例缩放
 }
 .bannerImgContent {

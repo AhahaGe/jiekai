@@ -60,7 +60,7 @@ $(document).ready(function(){
         printLength = 5;
       }
       for (var i = 0;i<printLength;i++) {
-        anli+='<li id="'+res[i].id+'"><div class="anliTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</p></li>';
+        anli+='<li id="'+res[i].id+'"><div class="anliTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd")+'</p></li>';
       }
       $('#anli').html(anli);
     });
