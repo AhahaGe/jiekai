@@ -28,12 +28,12 @@ footer a {
 
 .carousel-inner>.item>img {
   margin: 0 auto;
-  height: 354px;
+  /*height: 354px;*/
   width: 100%;
 }
 
 .left .carousel-control{
-  height: 354px;
+  /*height: 354px;*/
 }
 
 .nav .navbar {

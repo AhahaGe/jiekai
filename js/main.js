@@ -37,7 +37,11 @@ $(document).ready(function(){
   })
     .done(function( res ) {
       var dongtai = '';
-      for (var i = 0;i<res.length;i++) {
+      var printLength = res.length;
+      if(res.length>5){
+        printLength = 5;
+      }
+      for (var i = 0;i<printLength;i++) {
         dongtai+='<li><a target="blank" href="'+res[i].url+'">'+res[i].descrpiton+'</a></li>';
       }
       $('#dongtai').html(dongtai);
@@ -51,7 +55,11 @@ $(document).ready(function(){
   })
     .done(function( res ) {
       var anli = '';
-      for (var i = 0;i<res.length;i++) {
+      var printLength = res.length;
+      if(res.length>5){
+        printLength = 5;
+      }
+      for (var i = 0;i<printLength;i++) {
         anli+='<li id="'+res[i].id+'"><div class="anliTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd-mm-ss")+'</p></li>';
       }
       $('#anli').html(anli);
