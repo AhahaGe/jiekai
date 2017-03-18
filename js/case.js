@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
   //发送请求获取最新case数据
-  //发送请求获取最新banner数据
   $.ajax({
     method: "GET",
     url: "http://120.77.80.111:80/company/caseCategory/list",

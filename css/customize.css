@@ -156,6 +156,27 @@ ul li{
 #anli li img{
   width: 100%;
 }
+.anliTitle {
+  float: left;
+}
+.anliTitle:hover {
+  /*cursor: pointer;
+  color: red;*/
+  text-decoration:underline;
+}
+
+#dongtai li{
+  display: flex;
+  justify-content: space-between;
+}
+#dongtai{
+  padding: 0;
+}
+
+.dongtaiTitle:hover {
+  text-decoration:underline;
+}
+
 .news{
   margin-top: 18px;
 }
@@ -167,12 +188,6 @@ ul li{
 }
 .news hr.line{
   margin:10px 0;
-}
-#dongtai{
-  padding: 0;
-}
-#dongtai li{
-  text-align: left;
 }
 .nomargin{
   margin: 0 auto 1px;
@@ -299,13 +314,6 @@ li .datetime {
 }
 .right-li{
   /*padding: 12px 5px;*/
-}
-.anliTitle {
-  float: left;
-}
-.anliTitle:hover {
-  cursor: pointer;
-  color: red;
 }
 .bannerImg {
   max-width:2000px;//这是DIV的大小
