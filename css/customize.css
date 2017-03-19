@@ -198,7 +198,7 @@ ul li{
 }
 
 .zhengwenFont {
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .news{
@@ -272,13 +272,12 @@ ul li{
   justify-content: space-between;*/
   /*margin: 5px;*/
   padding: 0px;
-  font-size: 10px;
 }
 
 .caseContent .pTitle{
   float: left;
   margin-top: 12px;
-  font-size: 16px;
+  font-size: 14px;
   color: #175FA9;
 }
 
@@ -311,12 +310,11 @@ ul li{
 
 li .caseTitle {
   float: left;
-  font-size: 12px;
 }
 
 li .caseTitle:hover {
+  text-decoration: underline;
   cursor: pointer;
-  color: red;
 }
 
 li .datetime {
@@ -352,7 +350,6 @@ li .datetime {
 
 li .newsTitle {
   float: left;
-  font-size: 12px;
 }
 
 li .newsTitle:hover {

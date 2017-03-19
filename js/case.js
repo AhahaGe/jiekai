@@ -48,7 +48,7 @@ $(document).ready(function(){
           .done(function( res ) {
             var caseList = '';
             for (var i = 0;i<res.length;i++) {
-              caseList+='<li class="list-group-item right-li" id="'+res[i].id+'"><img class="imgTitle" src="../img/icon01.png"><div class="caseTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd")+'</p></li>';
+              caseList+='<li class="list-group-item right-li" id="'+res[i].id+'"><div class="caseTitle glyphicon glyphicon-unchecked">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd")+'</p></li>';
             }
             $('#case').html(caseList);
           });
