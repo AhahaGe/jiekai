@@ -11,12 +11,14 @@ $(document).ready(function(){
   		for (var i = 0;i<res.length;i++) {
   			if(i==0){
   				con+='<div class="item active"><img src="'+res[i].url+'" alt="'+res[i].descrpiton+'">'+
-              	 '<div class="carousel-caption">'+res[i].descrpiton+'</div></div>';
+              	 '</div>';
+                 /**<div class="carousel-caption">'+res[i].descrpiton+'</div>*/
 
               	indicators+='<li data-target="#carousel-example-generic" data-slide-to="'+i+'" class="active"></li>';
   			}else {
   				con+='<div class="item"><img src="'+res[i].url+'" alt="'+res[i].descrpiton+'">'+
-              	 '<div class="carousel-caption">'+res[i].descrpiton+'</div></div>';
+              	 '</div>';
+                 /**<div class="carousel-caption">'+res[i].descrpiton+'</div>*/
 
               	indicators+='<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>';
   			}

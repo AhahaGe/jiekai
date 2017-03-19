@@ -1,9 +1,9 @@
 .carousel-indicators li {
-    border-color: #f4511e;
+    border-color: #175FA9;
 }
 
 .carousel-indicators li.active {
-    background-color: #f4511e;
+    background-color: #175FA9;
 }
 
 footer {
@@ -114,6 +114,13 @@ footer a {
   color: #ffbbbc;
 }
 
+.navbar-brand.navClick {
+  color: yellow;
+}
+.navbar-default .navbar-nav > li .navSelected {
+  color: yellow;
+}
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #ecf0f1;
@@ -149,6 +156,12 @@ ul li{
 .container{
   width: auto!important;
 }
+
+#anli {
+  padding-left: 0px;
+  color: #778899;
+}
+
 #anli li{
   display: flex;
   justify-content: space-between;
@@ -163,6 +176,7 @@ ul li{
   /*cursor: pointer;
   color: red;*/
   text-decoration:underline;
+  cursor:pointer;
 }
 
 #dongtai li{
@@ -171,10 +185,20 @@ ul li{
 }
 #dongtai{
   padding: 0;
+  color: #778899;
 }
 
 .dongtaiTitle:hover {
   text-decoration:underline;
+  cursor:pointer;
+}
+
+.zhengwenColor {
+  color: #778899;
+}
+
+.zhengwenFont {
+  font-size: 11px;
 }
 
 .news{
@@ -288,7 +312,7 @@ ul li{
 
 li .caseTitle {
   float: left;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 li .caseTitle:hover {
@@ -321,4 +345,18 @@ li .datetime {
 }
 .bannerImgContent {
   width: 100%;
+}
+
+#news li{
+  border: 1px;
+}
+
+li .newsTitle {
+  float: left;
+  font-size: 12px;
+}
+
+li .newsTitle:hover {
+  cursor: pointer;
+  text-decoration:underline;
 }

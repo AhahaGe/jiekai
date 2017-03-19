@@ -36,7 +36,7 @@ $(document).ready(function(){
           .done(function( res ) {
             var newsContent = '';
             for (var i = 0;i<res.length;i++) {
-              newsContent+='<li class="list-group-item right-li" id="'+res[i].id+'"><img class="imgTitle" src="../img/icon01.png"><div class="caseTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd")+'</p></li>';
+              newsContent+='<li class="list-group-item" id="'+res[i].id+'"><img class="imgTitle" src="../img/icon01.png"><div class="newsTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd")+'</p></li>';
             }
             $('#news').html(newsContent);
           });
