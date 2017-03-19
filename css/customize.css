@@ -252,11 +252,10 @@ ul li{
 }
 #caseType {
   padding-left: 0;
+  text-align: center;
 }
 .caseType .title{
-  padding: 10px 0;
-  background: #175FA9;
-  color: #fff;
+  margin-top: 12px;
 }
 .caseType li {
   list-style: none;
@@ -289,6 +288,9 @@ ul li{
 .pTitle img{
   margin-bottom: 5px;
 }
+.title img{
+  margin-bottom: 5px;
+}
 
 .caseContent li{
   border: 1px;
@@ -301,7 +303,6 @@ ul li{
 
 .li-hover:hover{
   cursor: pointer;
-  color: red;
 }
 
 .nopadding {
@@ -329,6 +330,7 @@ li .datetime {
   float: right;
   font-size: 10px;
   margin-top: 20px;
+  margin-right: 30px;
 }
 .list-group-item{
   overflow: hidden;
