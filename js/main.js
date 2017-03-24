@@ -53,15 +53,6 @@ $(document).ready(function(){
   //注册监听
   $('#dongtai').on('click','li',function(e){
     var id = $(this).attr('id');
-    // $.ajax({
-    //   method: "GET",
-    //   url: "http://120.77.80.111:80/company/case/"+id,
-    //   success: function(res) {
-    //     var caseContent = '<div class="panel panel-primary"><div class="panel-heading">'+res.title+'</div><div>日期：'+new Date(parseInt(res.updatetime)).format("yyyy-MM-dd-mm-ss")+'</div><div class="panel-body">'+res.content+'</div></div>';
-    //     $('#case').html(caseContent);
-    //     window.location.href = './pages/case.html';
-    //   }
-    // })
     window.location.href = './pages/news.html?id='+id;
   });
 
