@@ -62,7 +62,7 @@ $(document).ready(function(){
         var caseListOfCategory = '';
         for (var i = 0;i<res.length;i++) {
           //{"id":7,"title":"title2","createtime":1488556800000,"updatetime":1488556800000,"category":"category3","categoryid":3,"content":"content2"}
-          caseListOfCategory+='<li class="list-group-item" id="'+res[i].id+'"><img class="imgTitle" src="../img/icon01.png"><div class="caseTitle">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd")+'</p></li>';
+          caseListOfCategory+='<li class="list-group-item" id="'+res[i].id+'"><div class="caseTitle glyphicon glyphicon-unchecked">'+res[i].title+'</div><p class="datetime">'+new Date(parseInt(res[i].updatetime)).format("yyyy-MM-dd")+'</p></li>';
         }
         $('#case').html(caseListOfCategory);
       }
