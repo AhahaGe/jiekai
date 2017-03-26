@@ -205,6 +205,12 @@ ul li{
 .news{
   margin-top: 18px;
 }
+.news.paddingRight{
+  padding-right: 25px;
+}
+.news.paddingLeft{
+  padding-right: 25px;
+}
 .news .headT{
   text-align: left;
 }
