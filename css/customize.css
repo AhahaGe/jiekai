@@ -378,3 +378,7 @@ li .newsTitle:hover {
   cursor: pointer;
   text-decoration:underline;
 }
+
+.aboutContent {
+  font-size: 14px;
+}
